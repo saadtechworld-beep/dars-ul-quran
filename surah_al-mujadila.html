@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="سورۃ المجادلہ کا درس اور تشریح سنیں۔">
+        <meta name="keywords" content="Quran,Surah,Islamic,Audio,Text">
+        <meta name="author" content="Muhammad Saad">
+        <meta name="robots" content="index,follow">
+        <title>درس القرآن | سورۃ المجادلہ</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta http-equiv="Content-Language" content="ur">
+        <meta property="og:description" content="Listen and read Surah Al-Mujadila from the Quran.">
+        <meta property="og:image" content="images/surah-al-mujadila.jpg">
+        <meta property="og:url" content="https://saadtechworld-beep.github.io/dars-ul-quran/surah-al-mujadila.html">
+        <link rel="canonical" href="https://saadtechworld-beep.github.io/dars-ul-quran/surah-al-mujadila.html">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="color-scheme" content="light dark">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+        <style>
+            nav {
+                background: #2e7d32;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 8px 15px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                color: #c8e6c9;
+            }
+            :root { --base-font: 18px; }
+            body {       
+                font-family: 'Scheherazade New', serif;
+                background: #f4f4f9;
+                margin: 0; padding: 0;
+                line-height: 1.8; color: #111;
+                font-size: var(--base-font);
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+            header {
+                background: linear-gradient(135deg, #4CAF50, #2E7D32);
+                color: white; text-align: center;
+                padding: 20px; font-size: 28px; font-weight: bold;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .container { max-width: 900px; margin: 20px auto; padding: 20px; }
+            .note {
+                background: #fff8e1; border: 1px solid #fbc02d;
+                color: #5d4037; padding: 12px 16px; margin: 18px auto;
+                border-radius: 10px; text-align: center; line-height: 1.6;
+            }
+            .ayat-box {
+                background: #fff; border: 1px solid #ddd; padding: 20px;
+                margin-bottom: 25px; border-radius: 12px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+            .ayat-range {
+                font-weight: bold; font-size: 20px; color: #2E7D32;
+                margin-bottom: 10px; text-align: center;
+                background: #f9f2ec; padding: 5px 10px; display: inline-block;
+                border-radius: 6px; min-width: 140px;
+            }
+            .bismillah {
+                text-align: center; font-size: 24px;
+                font-weight: bold; color: #444; margin: 15px 0;
+            }
+            .lesson {
+                padding: 15px; margin: 15px 0; border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                font-size: 20px; line-height: 1.8;
+            }
+            .lesson.old { background-color: #fff4e6; border-right: 5px solid #ff9800; }
+            .lesson.new { background-color: #e8f5e9; border-right: 5px solid #4caf50; }
+            audio { display: block; margin: 15px auto; width: 100%; border-radius: 8px; }
+            .nav { text-align: center; margin: 30px 0; }
+            .nav a {
+                text-decoration: none; color: white; background: #2E7D32;
+                padding: 10px 20px; border-radius: 8px; margin: 0 10px;
+                display: inline-block; transition: background 0.3s ease, transform 0.2s ease;
+            }
+            .nav a:hover { background: #4CAF50; transform: translateY(-2px); }
+            /* Controls */
+            .controls { text-align: center; margin: 15px 0; }
+            .controls button {
+                background: #2E7D32; color: white; border: none;
+                padding: 6px 12px; border-radius: 6px; margin: 0 5px;
+                cursor: pointer;
+            }
+            /* Dark Mode */
+            body.dark-mode { background: #121212; color: #eaeaea; }
+            body.dark-mode .ayat-box { background: #1f1f1f; border-color: #333; }
+            body.dark-mode .lesson.old { background-color: #3a2e25; border-right: 5px solid #ff9800; }
+            body.dark-mode .lesson.new { background-color: #234a2e; border-right: 5px solid #4caf50; }
+            body.dark-mode header { background: linear-gradient(135deg,#388e3c,#1b5e20); }
+            body.dark-mode .ayat-range { background: #2c2c2c; color: #a5d6a7; }
+            body.dark-mode .note { background:#333; color:#fff8e1; }
+            .dark-toggle {
+                position: fixed; top: 15px; left: 15px;
+                background: #2E7D32; color: white; border: none;
+                padding: 8px 12px; border-radius: 6px; cursor: pointer;
+                z-index: 1000;
+            }
+            .dark-toggle:hover { background: #4CAF50; }
+            @media (max-width: 600px) {
+                header {
+                    font-size: 20px;
+                    padding: 12px;
+                }
+                .ayat-range {
+                    font-size: 16px;
+                    min-width: auto;
+                    padding: 4px 8px;
+                }
+                .bismillah {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                audio {
+                    width: 100%;
+                }
+                .container {
+                    padding: 10px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 900px) {
+                header {
+                    font-size: 24px;
+                }
+                .ayat-range {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 18px;
+                }
+            }
+            @media (min-width: 901px) {
+                header {
+                    font-size: 28px;
+                }
+                .container {
+                    max-width: 900px;
+                }
+            }
+        </style>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <!-- Dark mode toggle -->
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌙 ڈارک موڈ</button>
+        <nav>
+            <a href="index.html">مرکزی صفحہ</a>
+            <a href="index.html#about">ویب سائٹ کے بارے میں</a>
+            <a href="index.html#surahs">سورۃ</a>
+            <a href="index.html#contact">رابطہ</a>
+        </nav>
+        <header>سُوۡرَةُ المُجَادَلَة</header>
+        <div class="note">
+            <div style="display:inline-block; background:#e8f5e9; color:#1b5e20; padding:6px 12px; border-radius:8px; font-weight:700; margin-bottom:8px;">
+                تشریح: پشتو
+            </div>
+            🎧 آڈیو میں گزشتہ سبق کا مختصر خلاصہ اور نئے سبق کی تفصیل عربی آیات کے ساتھ شامل ہے۔
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <button onclick="decreaseFont()">A-</button>
+            <button onclick="resetFont()">A</button>
+            <button onclick="increaseFont()">A+</button>
+        </div>
+        <div class="container">
+            <!-- آیات 1 تا 3 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ المجادلہ آیات 1 تا 3</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الحدید آیات 27 تا 29)</p>
+                    <p class="lesson old">ثُمَّ قَفَّيْنَا عَلَىٰٓ ءَاثَـٰرِهِم بِرُسُلِنَا وَقَفَّيْنَا بِعِيسَى ٱبْنِ مَرْيَمَ وَءَاتَيْنَـٰهُ ٱلْإِنجِيلَ وَجَعَلْنَا فِى قُلُوبِ ٱلَّذِينَ ٱتَّبَعُوهُ رَأْفَةًۭ وَرَحْمَةًۭ وَرَهْبَانِيَّةً ٱبْتَدَعُوهَا مَا كَتَبْنَـٰهَا عَلَيْهِمْ إِلَّا ٱبْتِغَآءَ رِضْوَٰنِ ٱللَّهِ فَمَا رَعَوْهَا حَقَّ رِعَايَتِهَا ۖ فَـَٔاتَيْنَا ٱلَّذِينَ ءَامَنُوا۟ مِنْهُمْ أَجْرَهُمْ ۖ وَكَثِيرٌۭ مِّنْهُمْ فَـٰسِقُونَ ٢٧ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَءَامِنُوا۟ بِرَسُولِهِۦ يُؤْتِكُمْ كِفْلَيْنِ مِن رَّحْمَتِهِۦ وَيَجْعَل لَّكُمْ نُورًۭا تَمْشُونَ بِهِۦ وَيَغْفِرْ لَكُمْ ۚ وَٱللَّهُ غَفُورٌۭ رَّحِيمٌۭ ٢٨ لِّئَلَّا يَعْلَمَ أَهْلُ ٱلْكِتَـٰبِ أَلَّا يَقْدِرُونَ عَلَىٰ شَىْءٍۢ مِّن فَضْلِ ٱللَّهِ ۙ وَأَنَّ ٱلْفَضْلَ بِيَدِ ٱللَّهِ يُؤْتِيهِ مَن يَشَآءُ ۚ وَٱللَّهُ ذُو ٱلْفَضْلِ ٱلْعَظِيمِ ٢٩</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ ١ ٱلَّذِينَ يُظَـٰهِرُونَ مِنكُم مِّن نِّسَآئِهِم مَّا هُنَّ أُمَّهَـٰتِهِمْ ۖ إِنْ أُمَّهَـٰتُهُمْ إِلَّا ٱلَّـٰٓـِٔى وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًۭا مِّنَ ٱلْقَوْلِ وَزُورًۭا ۚ وَإِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٌۭ ٢ وَٱلَّذِينَ يُظَـٰهِرُونَ مِن نِّسَآئِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا۟ فَتَحْرِيرُ رَقَبَةٍۢ مِّن قَبْلِ أَن يَتَمَآسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِۦ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ ٣</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Al-Mujadila_Ayat_1_to_3.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 4 تا 6 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ المجادلہ آیات 4 تا 6</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ المجادلہ آیات 1 تا 3)</p>
+                    <p class="lesson old">قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ ١ ٱلَّذِينَ يُظَـٰهِرُونَ مِنكُم مِّن نِّسَآئِهِم مَّا هُنَّ أُمَّهَـٰتِهِمْ ۖ إِنْ أُمَّهَـٰتُهُمْ إِلَّا ٱلَّـٰٓـِٔى وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًۭا مِّنَ ٱلْقَوْلِ وَزُورًۭا ۚ وَإِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٌۭ ٢ وَٱلَّذِينَ يُظَـٰهِرُونَ مِن نِّسَآئِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا۟ فَتَحْرِيرُ رَقَبَةٍۢ مِّن قَبْلِ أَن يَتَمَآسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِۦ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ ٣</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَآسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًۭا ۚ ذَٰلِكَ لِتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۗ وَلِلْكَـٰفِرِينَ عَذَابٌ أَلِيمٌ ٤ إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ وَقَدْ أَنزَلْنَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍۢ ۚ وَلِلْكَـٰفِرِينَ عَذَابٌۭ مُّهِينٌۭ ٥ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًۭا فَيُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ أَحْصَىٰهُ ٱللَّهُ وَنَسُوهُ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ شَهِيدٌ ٦</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Al-Mujadila_Ayat_4_to_6.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 7 تا 8 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ المجادلہ آیات 7 تا 8</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ المجادلہ آیات 4 تا 6)</p>
+        <p class="lesson old">فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَآسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًۭا ۚ ذَٰلِكَ لِتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۗ وَلِلْكَـٰفِرِينَ عَذَابٌ أَلِيمٌ ٤ إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ وَقَدْ أَنزَلْنَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍۢ ۚ وَلِلْكَـٰفِرِينَ عَذَابٌۭ مُّهِينٌۭ ٥ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًۭا فَيُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ أَحْصَىٰهُ ٱللَّهُ وَنَسُوهُ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ شَهِيدٌ ٦</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">أَلَمْ تَرَ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ مَا يَكُونُ مِن نَّجْوَىٰ ثَلَـٰثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَآ أَدْنَىٰ مِن ذَٰلِكَ وَلَآ أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا۟ ۖ ثُمَّ يُنَبِّئُهُم بِمَا عَمِلُوا۟ يَوْمَ ٱلْقِيَـٰمَةِ ۚ إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌ ٧ أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَـٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ ٨</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Al-Mujadila_Ayat_7_to_8.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+<!-- آیات 9 تا 11 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ المجادلہ آیات 9 تا 11</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ المجادلہ آیات 7 تا 8)</p>
+        <p class="lesson old">أَلَمْ تَرَ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ مَا يَكُونُ مِن نَّجْوَىٰ ثَلَـٰثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَآ أَدْنَىٰ مِن ذَٰلِكَ وَلَآ أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا۟ ۖ ثُمَّ يُنَبِّئُهُم بِمَا عَمِلُوا۟ يَوْمَ ٱلْقِيَـٰمَةِ ۚ إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌ ٧ أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَـٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ ٨</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَـٰجَيْتُمْ فَلَا تَتَنَـٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَـٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ ٩ إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَـٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ ١٠ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَـٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ ۖ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍۢ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ ١١</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Al-Mujadila_Ayat_9_to_11.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+<!-- آیات 12 تا 14 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ المجادلہ آیات 12 تا 14</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ المجادلہ آیات 9 تا 11)</p>
+        <p class="lesson old">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَـٰجَيْتُمْ فَلَا تَتَنَـٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَـٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ ٩ إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَـٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ ١٠ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَـٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ ۖ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍۢ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌۭ ١١</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نَـٰجَيْتُمُ ٱلرَّسُولَ فَقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَةًۭ ۚ ذَٰلِكَ خَيْرٌۭ لَّكُمْ وَأَطْهَرُ ۚ فَإِن لَّمْ تَجِدُوا۟ فَإِنَّ ٱللَّهَ غَفُورٌۭ رَّحِيمٌ ١٢ ۞ أَأَشْفَقْتُمْ أَن تُقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَـٰتٍۢ ۚ فَإِذْ لَمْ تَفْعَلُوا۟ وَتَابَ ٱللَّهُ عَلَيْكُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ ١٣ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ تَوَلَّوْا۟ قَوْمًا غَضِبَ ٱللَّهُ عَلَيْهِم مَّا هُم مِّنكُمْ وَلَا مِنْهُمْ وَيَحْلِفُونَ عَلَى ٱلْكَذِبِ وَهُمْ يَعْلَمُونَ ١٤</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Al-Mujadila_Ayat_12_to_14.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+            <!-- آیات 15 تا 19 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ المجادلہ آیات 15 تا 19</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ المجادلہ آیات 12 تا 14)</p>
+                    <p class="lesson old">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نَـٰجَيْتُمُ ٱلرَّسُولَ فَقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَةًۭ ۚ ذَٰلِكَ خَيْرٌۭ لَّكُمْ وَأَطْهَرُ ۚ فَإِن لَّمْ تَجِدُوا۟ فَإِنَّ ٱللَّهَ غَفُورٌۭ رَّحِيمٌ ١٢ ۞ أَأَشْفَقْتُمْ أَن تُقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَـٰتٍۢ ۚ فَإِذْ لَمْ تَفْعَلُوا۟ وَتَابَ ٱللَّهُ عَلَيْكُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ ١٣ ۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ تَوَلَّوْا۟ قَوْمًا غَضِبَ ٱللَّهُ عَلَيْهِم مَّا هُم مِّنكُمْ وَلَا مِنْهُمْ وَيَحْلِفُونَ عَلَى ٱلْكَذِبِ وَهُمْ يَعْلَمُونَ ١٤</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًۭا شَدِيدًا ۖ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ ١٥ ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةًۭ فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌۭ مُّهِينٌۭ ١٦ لَّن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَـٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۚ أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَـٰلِدُونَ ١٧ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًۭا فَيَحْلِفُونَ لَهُۥ كَمَا يَحْلِفُونَ لَكُمْ ۖ وَيَحْسَبُونَ أَنَّهُمْ عَلَىٰ شَىْءٍ ۚ أَلَآ إِنَّهُمْ هُمُ ٱلْكَـٰذِبُونَ ١٨ ٱسْتَحْوَذَ عَلَيْهِمُ ٱلشَّيْطَـٰنُ فَأَنسَىٰهُمْ ذِكْرَ ٱللَّهِ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱلشَّيْطَـٰنِ ۚ أَلَآ إِنَّ حِزْبَ ٱلشَّيْطَـٰنِ هُمُ ٱلْخَـٰسِرُونَ ١٩</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Al-Mujadila_Ayat_15_to_19.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 20 تا 22 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ المجادلہ آیات 20 تا 22</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ المجادلہ آیات 15 تا 19)</p>
+                    <p class="lesson old">أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًۭا شَدِيدًا ۖ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ ١٥ ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةًۭ فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌۭ مُّهِينٌۭ ١٦ لَّن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَـٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۚ أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَـٰلِدُونَ ١٧ يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًۭا فَيَحْلِفُونَ لَهُۥ كَمَا يَحْلِفُونَ لَكُمْ ۖ وَيَحْسَبُونَ أَنَّهُمْ عَلَىٰ شَىْءٍ ۚ أَلَآ إِنَّهُمْ هُمُ ٱلْكَـٰذِبُونَ ١٨ ٱسْتَحْوَذَ عَلَيْهِمُ ٱلشَّيْطَـٰنُ فَأَنسَىٰهُمْ ذِكْرَ ٱللَّهِ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱلشَّيْطَـٰنِ ۚ أَلَآ إِنَّ حِزْبَ ٱلشَّيْطَـٰنِ هُمُ ٱلْخَـٰسِرُونَ ١٩</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥٓ أُو۟لَـٰٓئِكَ فِى ٱلْأَذَلِّينَ ٢٠ كَتَبَ ٱللَّهُ لَأَغْلِبَنَّ أَنَا۠ وَرُسُلِىٓ ۚ إِنَّ ٱللَّهَ قَوِىٌّ عَزِيزٌۭ ٢١ ۞ لَّا تَجِدُ قَوْمًۭا يُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ يُوَآدُّونَ مَنْ حَآدَّ ٱللَّهَ وَرَسُولَهُۥ وَلَوْ كَانُوٓا۟ ءَابَآءَهُمْ أَوْ أَبْنَآءَهُمْ أَوْ إِخْوَٰنَهُمْ أَوْ عَشِيرَتَهُمْ ۚ أُو۟لَـٰٓئِكَ كَتَبَ فِى قُلُوبِهِمُ ٱلْإِيمَـٰنَ وَأَيَّدَهُم بِرُوحٍۢ مِّنْهُ ۖ وَيُدْخِلُهُمْ جَنَّـٰتٍۢ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَا ۚ رَضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱللَّهِ ۚ أَلَآ إِنَّ حِزْبَ ٱللَّهِ هُمُ ٱلْمُفْلِحُونَ ٢٢</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Al-Mujadila_Ayat_20_to_22.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <div class="nav">
+                <a href="#">⟵ پچھلا</a>
+                <a href="#">اگلا ⟶</a>
+            </div>
+        </div>
+        <script>
+            // Dark mode
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+            // Font size
+            function increaseFont(){ adjustFont(2); }
+            function decreaseFont(){ adjustFont(-2); }
+            function resetFont(){ document.documentElement.style.setProperty('--base-font','18px'); }
+            function adjustFont(delta){
+                const root = getComputedStyle(document.documentElement).getPropertyValue('--base-font').trim();
+                const current = parseInt(root) || 18;
+                const next = Math.min(28, Math.max(12, current + delta));
+                document.documentElement.style.setProperty('--base-font', next + 'px');
+            }
+            // Only one audio at a time
+            document.addEventListener('play', function(e){
+                let audios = document.getElementsByTagName('audio');
+                for(let i=0;i<audios.length;i++){
+                    if(audios[i] != e.target){ audios[i].pause(); }
+                }
+            }, true);
+        </script>
+        <footer style="background:#2e7d32; color:white; text-align:center; padding:12px; margin-top:30px;">
+            © 2025 درس القرآن | تمام حقوق محفوظ ہیں
+        </footer>
+    </body>
+</html>
