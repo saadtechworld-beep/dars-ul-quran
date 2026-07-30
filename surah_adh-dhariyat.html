@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="سورۃ الذاریات کا درس اور تشریح سنیں۔">
+        <meta name="keywords" content="Quran,Surah,Islamic,Audio,Text">
+        <meta name="author" content="Muhammad Saad">
+        <meta name="robots" content="index,follow">
+        <title>درس القرآن | سورۃ الذاریات</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta http-equiv="Content-Language" content="ur">
+        <meta property="og:description" content="Listen and read Surah Adh-Dhariyat from the Quran.">
+        <meta property="og:image" content="images/surah-adh-dhariyat.jpg">
+        <meta property="og:url" content="https://saadtechworld-beep.github.io/dars-ul-quran/surah-adh-dhariyat.html">
+        <link rel="canonical" href="https://saadtechworld-beep.github.io/dars-ul-quran/surah-adh-dhariyat.html">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="color-scheme" content="light dark">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+        <style>
+            nav {
+                background: #2e7d32;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 8px 15px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                color: #c8e6c9;
+            }
+            :root { --base-font: 18px; }
+            body {       
+                font-family: 'Scheherazade New', serif;
+                background: #f4f4f9;
+                margin: 0; padding: 0;
+                line-height: 1.8; color: #111;
+                font-size: var(--base-font);
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+            header {
+                background: linear-gradient(135deg, #4CAF50, #2E7D32);
+                color: white; text-align: center;
+                padding: 20px; font-size: 28px; font-weight: bold;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .container { max-width: 900px; margin: 20px auto; padding: 20px; }
+            .note {
+                background: #fff8e1; border: 1px solid #fbc02d;
+                color: #5d4037; padding: 12px 16px; margin: 18px auto;
+                border-radius: 10px; text-align: center; line-height: 1.6;
+            }
+            .ayat-box {
+                background: #fff; border: 1px solid #ddd; padding: 20px;
+                margin-bottom: 25px; border-radius: 12px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+            .ayat-range {
+                font-weight: bold; font-size: 20px; color: #2E7D32;
+                margin-bottom: 10px; text-align: center;
+                background: #f9f2ec; padding: 5px 10px; display: inline-block;
+                border-radius: 6px; min-width: 140px;
+            }
+            .bismillah {
+                text-align: center; font-size: 24px;
+                font-weight: bold; color: #444; margin: 15px 0;
+            }
+            .lesson {
+                padding: 15px; margin: 15px 0; border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                font-size: 20px; line-height: 1.8;
+            }
+            .lesson.old { background-color: #fff4e6; border-right: 5px solid #ff9800; }
+            .lesson.new { background-color: #e8f5e9; border-right: 5px solid #4caf50; }
+            audio { display: block; margin: 15px auto; width: 100%; border-radius: 8px; }
+            .nav { text-align: center; margin: 30px 0; }
+            .nav a {
+                text-decoration: none; color: white; background: #2E7D32;
+                padding: 10px 20px; border-radius: 8px; margin: 0 10px;
+                display: inline-block; transition: background 0.3s ease, transform 0.2s ease;
+            }
+            .nav a:hover { background: #4CAF50; transform: translateY(-2px); }
+            /* Controls */
+            .controls { text-align: center; margin: 15px 0; }
+            .controls button {
+                background: #2E7D32; color: white; border: none;
+                padding: 6px 12px; border-radius: 6px; margin: 0 5px;
+                cursor: pointer;
+            }
+            /* Dark Mode */
+            body.dark-mode { background: #121212; color: #eaeaea; }
+            body.dark-mode .ayat-box { background: #1f1f1f; border-color: #333; }
+            body.dark-mode .lesson.old { background-color: #3a2e25; border-right: 5px solid #ff9800; }
+            body.dark-mode .lesson.new { background-color: #234a2e; border-right: 5px solid #4caf50; }
+            body.dark-mode header { background: linear-gradient(135deg,#388e3c,#1b5e20); }
+            body.dark-mode .ayat-range { background: #2c2c2c; color: #a5d6a7; }
+            body.dark-mode .note { background:#333; color:#fff8e1; }
+            .dark-toggle {
+                position: fixed; top: 15px; left: 15px;
+                background: #2E7D32; color: white; border: none;
+                padding: 8px 12px; border-radius: 6px; cursor: pointer;
+                z-index: 1000;
+            }
+            .dark-toggle:hover { background: #4CAF50; }
+            @media (max-width: 600px) {
+                header {
+                    font-size: 20px;
+                    padding: 12px;
+                }
+                .ayat-range {
+                    font-size: 16px;
+                    min-width: auto;
+                    padding: 4px 8px;
+                }
+                .bismillah {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                audio {
+                    width: 100%;
+                }
+                .container {
+                    padding: 10px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 900px) {
+                header {
+                    font-size: 24px;
+                }
+                .ayat-range {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 18px;
+                }
+            }
+            @media (min-width: 901px) {
+                header {
+                    font-size: 28px;
+                }
+                .container {
+                    max-width: 900px;
+                }
+            }
+        </style>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <!-- Dark mode toggle -->
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌙 ڈارک موڈ</button>
+        <nav>
+            <a href="index.html">مرکزی صفحہ</a>
+            <a href="index.html#about">ویب سائٹ کے بارے میں</a>
+            <a href="index.html#surahs">سورۃ</a>
+            <a href="index.html#contact">رابطہ</a>
+        </nav>
+        <header>سُوۡرَةُ الذَّارِيَات</header>
+        <div class="note">
+            <div style="display:inline-block; background:#e8f5e9; color:#1b5e20; padding:6px 12px; border-radius:8px; font-weight:700; margin-bottom:8px;">
+                تشریح: پشتو
+            </div>
+            🎧 آڈیو میں گزشتہ سبق کا مختصر خلاصہ اور نئے سبق کی تفصیل عربی آیات کے ساتھ شامل ہے۔
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <button onclick="decreaseFont()">A-</button>
+            <button onclick="resetFont()">A</button>
+            <button onclick="increaseFont()">A+</button>
+        </div>
+        <div class="container">
+            <!-- آیات 1 تا 14 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الذاریات آیات 1 تا 14</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ ق آیات 39 تا 45)</p>
+                    <p class="lesson old">فَٱصْبِرْ عَلَىٰ مَا يَقُولُونَ وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ ٱلْغُرُوبِ ٣٩ وَمِنَ ٱلَّيْلِ فَسَبِّحْهُ وَأَدْبَـٰرَ ٱلسُّجُودِ ٤٠ وَٱسْتَمِعْ يَوْمَ يُنَادِ ٱلْمُنَادِ مِن مَّكَانٍۢ قَرِيبٍۢ ٤١ يَوْمَ يَسْمَعُونَ ٱلصَّيْحَةَ بِٱلْحَقِّ ۚ ذَٰلِكَ يَوْمُ ٱلْخُرُوجِ ٤٢ إِنَّا نَحْنُ نُحْىِۦ وَنُمِيتُ وَإِلَيْنَا ٱلْمَصِيرُ ٤٣ يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًۭا ۚ ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌۭ ٤٤ نَّحْنُ أَعْلَمُ بِمَا يَقُولُونَ ۖ وَمَآ أَنتَ عَلَيْهِم بِجَبَّارٍۢ ۖ فَذَكِّرْ بِٱلْقُرْءَانِ مَن يَخَافُ وَعِيدِ ٤٥</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">وَٱلذَّٰرِيَـٰتِ ذَرْوًۭا ١ فَٱلْحَـٰمِلَـٰتِ وِقْرًۭا ٢ فَٱلْجَـٰرِيَـٰتِ يُسْرًۭا ٣ فَٱلْمُقَسِّمَـٰتِ أَمْرًا ٤ إِنَّمَا تُوعَدُونَ لَصَادِقٌۭ ٥ وَإِنَّ ٱلدِّينَ لَوَٰقِعٌۭ ٦ وَٱلسَّمَآءِ ذَاتِ ٱلْحُبُكِ ٧ إِنَّكُمْ لَفِى قَوْلٍۢ مُّخْتَلِفٍۢ ٨ يُؤْفَكُ عَنْهُ مَنْ أُفِكَ ٩ قُتِلَ ٱلْخَرَّٰصُونَ ١٠ ٱلَّذِينَ هُمْ فِى غَمْرَةٍۢ سَاهُونَ ١١ يَسْـَٔلُونَ أَيَّانَ يَوْمُ ٱلدِّينِ ١٢ يَوْمَ هُمْ عَلَى ٱلنَّارِ يُفْتَنُونَ ١٣ ذُوقُوا۟ فِتْنَتَكُمْ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تَسْتَعْجِلُونَ ١٤</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Adh-Dhariyat_Ayat_1_to_14.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 15 تا 23 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الذاریات آیات 15 تا 23</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الذاریات آیات 1 تا 14)</p>
+                    <p class="lesson old">وَٱلذَّٰرِيَـٰتِ ذَرْوًۭا ١ فَٱلْحَـٰمِلَـٰتِ وِقْرًۭا ٢ فَٱلْجَـٰرِيَـٰتِ يُسْرًۭا ٣ فَٱلْمُقَسِّمَـٰتِ أَمْرًا ٤ إِنَّمَا تُوعَدُونَ لَصَادِقٌۭ ٥ وَإِنَّ ٱلدِّينَ لَوَٰقِعٌۭ ٦ وَٱلسَّمَآءِ ذَاتِ ٱلْحُبُكِ ٧ إِنَّكُمْ لَفِى قَوْلٍۢ مُّخْتَلِفٍۢ ٨ يُؤْفَكُ عَنْهُ مَنْ أُفِكَ ٩ قُتِلَ ٱلْخَرَّٰصُونَ ١٠ ٱلَّذِينَ هُمْ فِى غَمْرَةٍۢ سَاهُونَ ١١ يَسْـَٔلُونَ أَيَّانَ يَوْمُ ٱلدِّينِ ١٢ يَوْمَ هُمْ عَلَى ٱلنَّارِ يُفْتَنُونَ ١٣ ذُوقُوا۟ فِتْنَتَكُمْ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تَسْتَعْجِلُونَ ١٤</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍۢ وَعُيُونٍ ١٥ ءَاخِذِينَ مَآ ءَاتَىٰهُمْ رَبُّهُمْ ۚ إِنَّهُمْ كَانُوا۟ قَبْلَ ذَٰلِكَ مُحْسِنِينَ ١٦ كَانُوا۟ قَلِيلًۭا مِّنَ ٱلَّيْلِ مَا يَهْجَعُونَ ١٧ وَبِٱلْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ ١٨ وَفِىٓ أَمْوَٰلِهِمْ حَقٌّۭ لِّلسَّآئِلِ وَٱلْمَحْرُومِ ١٩ وَفِى ٱلْأَرْضِ ءَايَـٰتٌۭ لِّلْمُوقِنِينَ ٢٠ وَفِىٓ أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ ٢١ وَفِى ٱلسَّمَآءِ رِزْقُكُمْ وَمَا تُوعَدُونَ ٢٢ فَوَرَبِّ ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّهُۥ لَحَقٌّۭ مِّثْلَ مَآ أَنَّكُمْ تَنطِقُونَ ٢٣</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Adh-Dhariyat_Ayat_15_to_23.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 24 تا 30 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ الذاریات آیات 24 تا 30</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ الذاریات آیات 15 تا 23)</p>
+        <p class="lesson old">إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍۢ وَعُيُونٍ ١٥ ءَاخِذِينَ مَآ ءَاتَىٰهُمْ رَبُّهُمْ ۚ إِنَّهُمْ كَانُوا۟ قَبْلَ ذَٰلِكَ مُحْسِنِينَ ١٦ كَانُوا۟ قَلِيلًۭا مِّنَ ٱلَّيْلِ مَا يَهْجَعُونَ ١٧ وَبِٱلْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ ١٨ وَفِىٓ أَمْوَٰلِهِمْ حَقٌّۭ لِّلسَّآئِلِ وَٱلْمَحْرُومِ ١٩ وَفِى ٱلْأَرْضِ ءَايَـٰتٌۭ لِّلْمُوقِنِينَ ٢٠ وَفِىٓ أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ ٢١ وَفِى ٱلسَّمَآءِ رِزْقُكُمْ وَمَا تُوعَدُونَ ٢٢ فَوَرَبِّ ٱلسَّمَآءِ وَٱلْأَرْضِ إِنَّهُۥ لَحَقٌّۭ مِّثْلَ مَآ أَنَّكُمْ تَنطِقُونَ ٢٣</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ ٢٤ إِذْ دَخَلُوا۟ عَلَيْهِ فَقَالُوا۟ سَلَـٰمًۭا ۖ قَالَ سَلَـٰمٌۭ قَوْمٌۭ مُّنكَرُونَ ٢٥ فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍۢ سَمِينٍۢ ٢٦ فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ ٢٧ فَأَوْجَسَ مِنْهُمْ خِيفَةًۭ ۖ قَالُوا۟ لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَـٰمٍ عَلِيمٍۢ ٢٨ فَأَقْبَلَتِ ٱمْرَأَتُهُۥ فِى صَرَّةٍۢ فَصَكَّتْ وَجْهَهَا وَقَالَتْ عَجُوزٌ عَقِيمٌۭ ٢٩ قَالُوا۟ كَذَٰلِكِ قَالَ رَبُّكِ ۖ إِنَّهُۥ هُوَ ٱلْحَكِيمُ ٱلْعَلِيمُ ٣٠</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Adh-Dhariyat_Ayat_24_to_30.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+<!-- آیات 31 تا 40 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ الذاریات آیات 31 تا 40</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ الذاریات آیات 24 تا 30)</p>
+        <p class="lesson old">هَلْ أَتَىٰكَ حَدِيثُ ضَيْفِ إِبْرَٰهِيمَ ٱلْمُكْرَمِينَ ٢٤ إِذْ دَخَلُوا۟ عَلَيْهِ فَقَالُوا۟ سَلَـٰمًۭا ۖ قَالَ سَلَـٰمٌۭ قَوْمٌۭ مُّنكَرُونَ ٢٥ فَرَاغَ إِلَىٰٓ أَهْلِهِۦ فَجَآءَ بِعِجْلٍۢ سَمِينٍۢ ٢٦ فَقَرَّبَهُۥٓ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ ٢٧ فَأَوْجَسَ مِنْهُمْ خِيفَةًۭ ۖ قَالُوا۟ لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَـٰمٍ عَلِيمٍۢ ٢٨ فَأَقْبَلَتِ ٱمْرَأَتُهُۥ فِى صَرَّةٍۢ فَصَكَّتْ وَجْهَهَا وَقَالَتْ عَجُوزٌ عَقِيمٌۭ ٢٩ قَالُوا۟ كَذَٰلِكِ قَالَ رَبُّكِ ۖ إِنَّهُۥ هُوَ ٱلْحَكِيمُ ٱلْعَلِيمُ ٣٠</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">۞ قَالَ فَمَا خَطْبُكُمْ أَيُّهَا ٱلْمُرْسَلُونَ ٣١ قَالُوٓا۟ إِنَّآ أُرْسِلْنَآ إِلَىٰ قَوْمٍۢ مُّجْرِمِينَ ٣٢ لِنُرْسِلَ عَلَيْهِمْ حِجَارَةًۭ مِّن طِينٍۢ ٣٣ مُّسَوَّمَةً عِندَ رَبِّكَ لِلْمُسْرِفِينَ ٣٤ فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ ٱلْمُؤْمِنِينَ ٣٥ فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍۢ مِّنَ ٱلْمُسْلِمِينَ ٣٦ وَتَرَكْنَا فِيهَآ ءَايَةًۭ لِّلَّذِينَ يَخَافُونَ ٱلْعَذَابَ ٱلْأَلِيمَ ٣٧ وَفِى مُوسَىٰٓ إِذْ أَرْسَلْنَـٰهُ إِلَىٰ فِرْعَوْنَ بِسُلْطَـٰنٍۢ مُّبِينٍۢ ٣٨ فَتَوَلَّىٰ بِرُكْنِهِۦ وَقَالَ سَـٰحِرٌ أَوْ مَجْنُونٌۭ ٣٩ فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ وَهُوَ مُلِيمٌۭ ٤٠</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Adh-Dhariyat_Ayat_31_to_40.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+<!-- آیات 41 تا 46 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ الذاریات آیات 41 تا 46</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ الذاریات آیات 31 تا 40)</p>
+        <p class="lesson old">۞ قَالَ فَمَا خَطْبُكُمْ أَيُّهَا ٱلْمُرْسَلُونَ ٣١ قَالُوٓا۟ إِنَّآ أُرْسِلْنَآ إِلَىٰ قَوْمٍۢ مُّجْرِمِينَ ٣٢ لِنُرْسِلَ عَلَيْهِمْ حِجَارَةًۭ مِّن طِينٍۢ ٣٣ مُّسَوَّمَةً عِندَ رَبِّكَ لِلْمُسْرِفِينَ ٣٤ فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ ٱلْمُؤْمِنِينَ ٣٥ فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍۢ مِّنَ ٱلْمُسْلِمِينَ ٣٦ وَتَرَكْنَا فِيهَآ ءَايَةًۭ لِّلَّذِينَ يَخَافُونَ ٱلْعَذَابَ ٱلْأَلِيمَ ٣٧ وَفِى مُوسَىٰٓ إِذْ أَرْسَلْنَـٰهُ إِلَىٰ فِرْعَوْنَ بِسُلْطَـٰنٍۢ مُّبِينٍۢ ٣٨ فَتَوَلَّىٰ بِرُكْنِهِۦ وَقَالَ سَـٰحِرٌ أَوْ مَجْنُونٌۭ ٣٩ فَأَخَذْنَـٰهُ وَجُنُودَهُۥ فَنَبَذْنَـٰهُمْ فِى ٱلْيَمِّ وَهُوَ مُلِيمٌۭ ٤٠</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">وَفِى عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ ٱلرِّيحَ ٱلْعَقِيمَ ٤١ مَا تَذَرُ مِن شَىْءٍ أَتَتْ عَلَيْهِ إِلَّا جَعَلَتْهُ كَٱلرَّمِيمِ ٤٢ وَفِى ثَمُودَ إِذْ قِيلَ لَهُمْ تَمَتَّعُوا۟ حَتَّىٰ حِينٍۢ ٤٣ فَعَتَوْا۟ عَنْ أَمْرِ رَبِّهِمْ فَأَخَذَتْهُمُ ٱلصَّـٰعِقَةُ وَهُمْ يَنظُرُونَ ٤٤ فَمَا ٱسْتَطَـٰعُوا۟ مِن قِيَامٍۢ وَمَا كَانُوا۟ مُنتَصِرِينَ ٤٥ وَقَوْمَ نُوحٍۢ مِّن قَبْلُ ۖ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ ٤٦</p>
+    </div>
+    <audio controls>
+        <source src="audio/Surah_Adh-Dhariyat_Ayat_41_to_46.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+            <!-- آیات 47 تا 52 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الذاریات آیات 47 تا 52</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الذاریات آیات 41 تا 46)</p>
+                    <p class="lesson old">وَفِى عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ ٱلرِّيحَ ٱلْعَقِيمَ ٤١ مَا تَذَرُ مِن شَىْءٍ أَتَتْ عَلَيْهِ إِلَّا جَعَلَتْهُ كَٱلرَّمِيمِ ٤٢ وَفِى ثَمُودَ إِذْ قِيلَ لَهُمْ تَمَتَّعُوا۟ حَتَّىٰ حِينٍۢ ٤٣ فَعَتَوْا۟ عَنْ أَمْرِ رَبِّهِمْ فَأَخَذَتْهُمُ ٱلصَّـٰعِقَةُ وَهُمْ يَنظُرُونَ ٤٤ فَمَا ٱسْتَطَـٰعُوا۟ مِن قِيَامٍۢ وَمَا كَانُوا۟ مُنتَصِرِينَ ٤٥ وَقَوْمَ نُوحٍۢ مِّن قَبْلُ ۖ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَـٰسِقِينَ ٤٦</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">وَٱلسَّمَآءَ بَنَيْنَـٰهَا بِأَيْدٍۢ وَإِنَّا لَمُوسِعُونَ ٤٧ وَٱلْأَرْضَ فَرَشْنَـٰهَا فَنِعْمَ ٱلْمَـٰهِدُونَ ٤٨ وَمِن كُلِّ شَىْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ ٤٩ فَفِرُّوٓا۟ إِلَى ٱللَّهِ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌۭ مُّبِينٌۭ ٥٠ وَلَا تَجْعَلُوا۟ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌۭ مُّبِينٌۭ ٥١ كَذَٰلِكَ مَآ أَتَى ٱلَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ إِلَّا قَالُوا۟ سَاحِرٌ أَوْ مَجْنُونٌ ٥٢</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Adh-Dhariyat_Ayat_47_to_52.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- آیات 53 تا 60 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الذاریات آیات 53 تا 60</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الذاریات آیات 47 تا 52)</p>
+                    <p class="lesson old">وَٱلسَّمَآءَ بَنَيْنَـٰهَا بِأَيْدٍۢ وَإِنَّا لَمُوسِعُونَ ٤٧ وَٱلْأَرْضَ فَرَشْنَـٰهَا فَنِعْمَ ٱلْمَـٰهِدُونَ ٤٨ وَمِن كُلِّ شَىْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ ٤٩ فَفِرُّوٓا۟ إِلَى ٱللَّهِ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌۭ مُّبِينٌۭ ٥٠ وَلَا تَجْعَلُوا۟ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ ۖ إِنِّى لَكُم مِّنْهُ نَذِيرٌۭ مُّبِينٌۭ ٥١ كَذَٰلِكَ مَآ أَتَى ٱلَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ إِلَّا قَالُوا۟ سَاحِرٌ أَوْ مَجْنُونٌ ٥٢</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">أَتَوَاصَوْا۟ بِهِۦ ۚ بَلْ هُمْ قَوْمٌۭ طَاغُونَ ٥٣ فَتَوَلَّ عَنْهُمْ فَمَآ أَنتَ بِمَلُومٍۢ ٥٤ وَذَكِّرْ فَإِنَّ ٱلذِّكْرَىٰ تَنفَعُ ٱلْمُؤْمِنِينَ ٥٥ وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ ٥٦ مَآ أُرِيدُ مِنْهُم مِّن رِّزْقٍۢ وَمَآ أُرِيدُ أَن يُطْعِمُونِ ٥٧ إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ ٥٨ فَإِنَّ لِلَّذِينَ ظَلَمُوا۟ ذَنُوبًۭا مِّثْلَ ذَنُوبِ أَصْحَـٰبِهِمْ فَلَا يَسْتَعْجِلُونِ ٥٩ فَوَيْلٌۭ لِّلَّذِينَ كَفَرُوا۟ مِن يَوْمِهِمُ ٱلَّذِى يُوعَدُونَ ٦٠</p>
+                </div>
+                <audio controls>
+                    <source src="audio/Surah_Adh-Dhariyat_Ayat_53_to_60.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <div class="nav">
+                <a href="surah-qaf.html">⟵ پچھلا</a>
+                <a href="index.html">اگلا ⟶</a>
+            </div>
+        </div>
+        <script>
+            // Dark mode
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+            // Font size
+            function increaseFont(){ adjustFont(2); }
+            function decreaseFont(){ adjustFont(-2); }
+            function resetFont(){ document.documentElement.style.setProperty('--base-font','18px'); }
+            function adjustFont(delta){
+                const root = getComputedStyle(document.documentElement).getPropertyValue('--base-font').trim();
+                const current = parseInt(root) || 18;
+                const next = Math.min(28, Math.max(12, current + delta));
+                document.documentElement.style.setProperty('--base-font', next + 'px');
+            }
+            // Only one audio at a time
+            document.addEventListener('play', function(e){
+                let audios = document.getElementsByTagName('audio');
+                for(let i=0;i<audios.length;i++){
+                    if(audios[i] != e.target){ audios[i].pause(); }
+                }
+            }, true);
+        </script>
+        <footer style="background:#2e7d32; color:white; text-align:center; padding:12px; margin-top:30px;">
+            © 2025 درس القرآن | تمام حقوق محفوظ ہیں
+        </footer>
+    </body>
+</html>
+            
