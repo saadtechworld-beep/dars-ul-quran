@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="سورۃ الرحمن کا درس اور تشریح سنیں۔">
+        <meta name="keywords" content="Quran,Surah,Islamic,Audio,Text">
+        <meta name="author" content="Muhammad Saad">
+        <meta name="robots" content="index,follow">
+        <title>درس القرآن | سورۃ الرحمن</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta http-equiv="Content-Language" content="ur">
+        <meta property="og:description" content="Listen and read Surah Ar-Rahman from the Quran.">
+        <meta property="og:image" content="images/surah-ar-rahman.jpg">
+        <meta property="og:url" content="https://saadtechworld-beep.github.io/dars-ul-quran/surah-ar-rahman.html">
+        <link rel="canonical" href="https://saadtechworld-beep.github.io/dars-ul-quran/surah-ar-rahman.html">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="color-scheme" content="light dark">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+        <style>
+            nav {
+                background: #2e7d32;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 8px 15px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                color: #c8e6c9;
+            }
+            :root { --base-font: 18px; }
+            body {       
+                font-family: 'Scheherazade New', serif;
+                background: #f4f4f9;
+                margin: 0; padding: 0;
+                line-height: 1.8; color: #111;
+                font-size: var(--base-font);
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+            header {
+                background: linear-gradient(135deg, #4CAF50, #2E7D32);
+                color: white; text-align: center;
+                padding: 20px; font-size: 28px; font-weight: bold;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .container { max-width: 900px; margin: 20px auto; padding: 20px; }
+            .note {
+                background: #fff8e1; border: 1px solid #fbc02d;
+                color: #5d4037; padding: 12px 16px; margin: 18px auto;
+                border-radius: 10px; text-align: center; line-height: 1.6;
+            }
+            .ayat-box {
+                background: #fff; border: 1px solid #ddd; padding: 20px;
+                margin-bottom: 25px; border-radius: 12px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+            .ayat-range {
+                font-weight: bold; font-size: 20px; color: #2E7D32;
+                margin-bottom: 10px; text-align: center;
+                background: #f9f2ec; padding: 5px 10px; display: inline-block;
+                border-radius: 6px; min-width: 140px;
+            }
+            .bismillah {
+                text-align: center; font-size: 24px;
+                font-weight: bold; color: #444; margin: 15px 0;
+            }
+            .lesson {
+                padding: 15px; margin: 15px 0; border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                font-size: 20px; line-height: 1.8;
+            }
+            .lesson.old { background-color: #fff4e6; border-right: 5px solid #ff9800; }
+            .lesson.new { background-color: #e8f5e9; border-right: 5px solid #4caf50; }
+            audio { display: block; margin: 15px auto; width: 100%; border-radius: 8px; }
+            .nav { text-align: center; margin: 30px 0; }
+            .nav a {
+                text-decoration: none; color: white; background: #2E7D32;
+                padding: 10px 20px; border-radius: 8px; margin: 0 10px;
+                display: inline-block; transition: background 0.3s ease, transform 0.2s ease;
+            }
+            .nav a:hover { background: #4CAF50; transform: translateY(-2px); }
+            /* Controls */
+            .controls { text-align: center; margin: 15px 0; }
+            .controls button {
+                background: #2E7D32; color: white; border: none;
+                padding: 6px 12px; border-radius: 6px; margin: 0 5px;
+                cursor: pointer;
+            }
+            /* Dark Mode */
+            body.dark-mode { background: #121212; color: #eaeaea; }
+            body.dark-mode .ayat-box { background: #1f1f1f; border-color: #333; }
+            body.dark-mode .lesson.old { background-color: #3a2e25; border-right: 5px solid #ff9800; }
+            body.dark-mode .lesson.new { background-color: #234a2e; border-right: 5px solid #4caf50; }
+            body.dark-mode header { background: linear-gradient(135deg,#388e3c,#1b5e20); }
+            body.dark-mode .ayat-range { background: #2c2c2c; color: #a5d6a7; }
+            body.dark-mode .note { background:#333; color:#fff8e1; }
+            .dark-toggle {
+                position: fixed; top: 15px; left: 15px;
+                background: #2E7D32; color: white; border: none;
+                padding: 8px 12px; border-radius: 6px; cursor: pointer;
+                z-index: 1000;
+            }
+            .dark-toggle:hover { background: #4CAF50; }
+            @media (max-width: 600px) {
+                header {
+                    font-size: 20px;
+                    padding: 12px;
+                }
+                .ayat-range {
+                    font-size: 16px;
+                    min-width: auto;
+                    padding: 4px 8px;
+                }
+                .bismillah {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                audio {
+                    width: 100%;
+                }
+                .container {
+                    padding: 10px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 900px) {
+                header {
+                    font-size: 24px;
+                }
+                .ayat-range {
+                    font-size: 18px;
+                }
+                .lesson {
+                    font-size: 18px;
+                }
+            }
+            @media (min-width: 901px) {
+                header {
+                    font-size: 28px;
+                }
+                .container {
+                    max-width: 900px;
+                }
+            }
+        </style>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <!-- Dark mode toggle -->
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌙 ڈارک موڈ</button>
+        <nav>
+            <a href="index.html">مرکزی صفحہ</a>
+            <a href="index.html#about">ویب سائٹ کے بارے میں</a>
+            <a href="index.html#surahs">سورۃ</a>
+            <a href="index.html#contact">رابطہ</a>
+        </nav>
+        <header>سُوۡرَةُ الرَّحۡمٰن</header>
+        <div class="note">
+            <div style="display:inline-block; background:#e8f5e9; color:#1b5e20; padding:6px 12px; border-radius:8px; font-weight:700; margin-bottom:8px;">
+                تشریح: پشتو
+            </div>
+            🎧 آڈیو میں گزشتہ سبق کا مختصر خلاصہ اور نئے سبق کی تفصیل عربی آیات کے ساتھ شامل ہے۔
+        </div>
+        <!-- Controls -->
+        <div class="controls">
+            <button onclick="decreaseFont()">A-</button>
+            <button onclick="resetFont()">A</button>
+            <button onclick="increaseFont()">A+</button>
+        </div>
+        <div class="container">
+            
+            <!-- Lesson 1: Ayat 1-16 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الرحمن آیات 1 تا 16</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ القمر آیات 44 تا 55)</p>
+                    <p class="lesson old">أَمْ يَقُولُونَ نَحْنُ جَمِيعٌۭ مُّنتَصِرٌۭ ٤٤ سَيُهْزَمُ ٱلْجَمْعُ وَيُوَلُّونَ ٱلدُّبُرَ ٤٥ بَلِ ٱلسَّاعَةُ مَوْعِدُهُمْ وَٱلسَّاعَةُ أَدْهَىٰ وَأَمَرُّ ٤٦ إِنَّ ٱلْمُجْرِمِينَ فِى ضَلَـٰلٍۢ وَسُعُرٍۢ ٤٧ يَوْمَ يُسْحَبُونَ فِى ٱلنَّارِ عَلَىٰ وُجُوهِهِمْ ذُوقُوا۟ مَسَّ سَقَرَ ٤٨ إِنَّا كُلَّ شَىْءٍ خَلَقْنَـٰهُ بِقَدَرٍۢ ٤٩ وَمَآ أَمْرُنَآ إِلَّا وَٰحِدَةٌۭ كَلَمْحٍۭ بِٱلْبَصَرِ ٥٠ وَلَقَدْ أَهْلَكْنَآ أَشْيَاعَكُمْ فَهَلْ مِن مُّدَّكِرٍۢ ٥١ وَكُلُّ شَىْءٍۢ فَعَلُوهُ فِى ٱلزُّبُرِ ٥٢ وَكُلُّ صَغِيرٍۢ وَكَبِيرٍۢ مُّسْتَطَرٌ ٥٣ إِنَّ ٱلْمُتَّقِينَ فِى جَنَّـٰتٍۢ وَنَهَرٍۢ ٥٤ فِى مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍۢ مُّقْتَدِرٍۭ ٥٥</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">ٱلرَّحْمَـٰنُ ١ عَلَّمَ ٱلْقُرْءَانَ ٢ خَلَقَ ٱلْإِنسَـٰنَ ٣ عَلَّمَهُ ٱلْبَيَانَ ٤ ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ ٥ وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ ٦ وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ ٧ أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ ٨ وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ ٩ وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ ١٠ فِيهَا فَـٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ ١١ وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ ١٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٣ خَلَقَ ٱلْإِنسَـٰنَ مِن صَلْصَـٰلٍۢ كَٱلْفَخَّارِ ١٤ وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ ١٥ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٦</p>
+                </div>
+                <audio controls>
+                    <source src="audio/surah_ar-rahman/Surah_Ar-Rahman_Ayat_1_to_16.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+
+            <!-- Lesson 2: Ayat 17-34 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الرحمن آیات 17 تا 34</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الرحمن آیات 1 تا 16)</p>
+                    <p class="lesson old">ٱلرَّحْمَـٰنُ ١ عَلَّمَ ٱلْقُرْءَانَ ٢ خَلَقَ ٱلْإِنسَـٰنَ ٣ عَلَّمَهُ ٱلْبَيَانَ ٤ ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ ٥ وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ ٦ وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ ٧ أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ ٨ وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ ٩ وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ ١٠ فِيهَا فَـٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ ١١ وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱלְּرَيْحَانُ ١٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٣ خَلَقَ ٱلْإِنسَـٰنَ مِن صَلْصَـٰلٍۢ كَٱلْفَخَّارِ ١٤ وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ ١٥ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٦</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ ١٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٨ مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ ١٩ بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ ٢٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢١ يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ ٢٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٣ وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَـٰمِ ٢٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٥ كُلُّ مَنْ عَلَيْهَا فَانٍۢ ٢٦ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ ٢٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٨ يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍۢ ٢٩ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٠ سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ ٣١ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٢ يَـٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَـٰنٍۢ ٣٣ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٤</p>
+                </div>
+                <audio controls>
+                    <source src="audio/surah_ar-rahman/Surah_Ar-Rahman_Ayat_17_to_34.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+            <!-- Lesson 3: Ayat 35-51 -->
+<div class="ayat-box">
+    <h3 class="ayat-range">سورۃ الرحمن آیات 35 تا 51</h3>
+    <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+        <p style="color: #555;">(سورۃ الرحمن آیات 17 تا 34)</p>
+        <p class="lesson old">رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ ١٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ١٨ مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ ١٩ بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ ٢٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢١ يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ ٢٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٣ وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَـٰمِ ٢٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٥ كُلُّ مَنْ عَلَيْهَا فَانٍۢ ٢٦ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ ٢٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٢٨ يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍۢ ٢٩ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٠ سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ ٣١ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٢ يَـٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَـٰنٍۢ ٣٣ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٤</p>
+    </div>
+    <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+    <div>
+        <h3 style="color: #1b5e20;">نیا سبق</h3>
+        <p class="lesson new">يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ ٣٥ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٦ فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ ٣٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٨ فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ ٣٩ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٠ يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَـٰهُمْ فَيُؤْخَذُ بِٱلنَّوَاصِى وَٱلْأَقْدَامِ ٤١ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٢ هَـٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ ٤٣ يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍۢ ٤٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٥ وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ ٤٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٧ ذَوَاتَآ أَفْنَانٍۢ ٤٨ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٩ فِيهِمَا عَيْنَانِ تَجْرِيَانِ ٥٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥١</p>
+    </div>
+    <audio controls>
+        <source src="audio/surah_ar-rahman/Surah_Ar-Rahman_Ayat_35_to_51.mp3" type="audio/mpeg">
+        آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+    </audio>
+</div>
+            <!-- Lesson 4: Ayat 52-65 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الرحمن آیات 52 تا 65</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الرحمن آیات 35 تا 51)</p>
+                    <p class="lesson old">يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ ٣٥ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٦ فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ ٣٧ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٣٨ فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ ٣٩ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٠ يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَـٰهُمْ فَيُؤْخَذُ بِٱلنَّوَاصِى وَٱلْأَقْدَامِ ٤١ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٢ هَـٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ ٤٣ يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍۢ ٤٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٥ وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ ٤٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٧ ذَوَاتَآ أَفْنَانٍۢ ٤٨ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٤٩ فِيهِمَا عَيْنَانِ تَجْرِيَانِ ٥٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥١</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">فِيهِمَا مِن كُلِّ فَـٰكِهَةٍۢ زَوْجَانِ ٥٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٣ مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍۢ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍۢ ٥٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٥ فِيهِنَّ قَـٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ ٥٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٧ كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ ٥٨ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٩ هَلْ جَزَآءُ ٱلْإِحْسَـٰنِ إِلَّا ٱلْإِحْسَـٰنُ ٦٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦١ وَمِن دُونِهِمَا جَنَّتَانِ ٦٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٣ مُدْهَآمَّتَانِ ٦٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٥</p>
+                </div>
+                <audio controls>
+                    <source src="audio/surah_ar-rahman/Surah_Ar-Rahman_Ayat_52_to_65.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+
+            <!-- Lesson 5: Ayat 66-78 -->
+            <div class="ayat-box">
+                <h3 class="ayat-range">سورۃ الرحمن آیات 66 تا 78</h3>
+                <p class="bismillah">أَعُوذُ بِاللّٰہِ مِنَ الشَّیْطٰنِ الرَّجِیْمِ</p>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">گزشتہ سبق</h3>
+                    <p style="color: #555;">(سورۃ الرحمن آیات 52 تا 65)</p>
+                    <p class="lesson old">فِيهِمَا مِن كُلِّ فَـٰكِهَةٍۢ زَوْجَانِ ٥٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٣ مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍۢ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍۢ ٥٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٥ فِيهِنَّ قَـٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ ٥٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٧ كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ ٥٨ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٥٩ هَلْ جَزَآءُ ٱلْإِحْسَـٰنِ إِلَّا ٱلْإِحْسَـٰنُ ٦٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦١ وَمِن دُونِهِمَا جَنَّتَانِ ٦٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٣ مُدْهَآمَّتَانِ ٦٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٥</p>
+                </div>
+                <p class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</p>
+                <div>
+                    <h3 style="color: #1b5e20;">نیا سبق</h3>
+                    <p class="lesson new">فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ ٦٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٧ فِيهِمَا فَـٰكِهَةٌۭ وَنَخْلٌۭ وَرُمَّانٌۭ ٦٨ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٦٩ فِيهِنَّ خَيْرَٰتٌ حِسَانٌۭ ٧٠ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٧١ حُورٌۭ مَّقْصُورَٰتٌۭ فِى ٱلْخِيَامِ ٧٢ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٧٣ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ ٧٤ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٧٥ مُتَّكِـِٔينَ عَلَىٰ رَفْرَفٍۢ خُضْرٍۢ وَعَبْقَرِىٍّ حِسَانٍۢ ٧٦ فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ٧٧ تَبَـٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ ٧٨</p>
+                </div>
+                <audio controls>
+                    <source src="audio/surah_ar-rahman/Surah_Ar-Rahman_Ayat_66_to_78.mp3" type="audio/mpeg">
+                    آپ کا براؤزر آڈیو کو سپورٹ نہیں کرتا۔
+                </audio>
+            </div>
+
+            <div class="nav">
+                <a href="#">⟵ پچھلا</a>
+                <a href="#">اگلا ⟶</a>
+            </div>
+        </div>
+        <script>
+            // Dark mode
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+            // Font size
+            function increaseFont(){ adjustFont(2); }
+            function decreaseFont(){ adjustFont(-2); }
+            function resetFont(){ document.documentElement.style.setProperty('--base-font','18px'); }
+            function adjustFont(delta){
+                const root = getComputedStyle(document.documentElement).getPropertyValue('--base-font').trim();
+                const current = parseInt(root) || 18;
+                const next = Math.min(28, Math.max(12, current + delta));
+                document.documentElement.style.setProperty('--base-font', next + 'px');
+            }
+            // Only one audio at a time
+            document.addEventListener('play', function(e){
+                let audios = document.getElementsByTagName('audio');
+                for(let i=0;i<audios.length;i++){
+                    if(audios[i] != e.target){ audios[i].pause(); }
+                }
+            }, true);
+        </script>
+        <footer style="background:#2e7d32; color:white; text-align:center; padding:12px; margin-top:30px;">
+            © 2025 درس القرآن | تمام حقوق محفوظ ہیں
+        </footer>
+    </body>
+</html>
